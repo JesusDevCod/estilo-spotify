@@ -20,6 +20,7 @@ mainContent.style.paddingTop = `${topbarHeight + 20}px`;
 /*       BOTON PALY          */
 const containerConcentracion = document.querySelectorAll('.card-concentracion');
 const containerSpotifyPlayList = document.querySelectorAll('.card-spotify-playlist');
+const containerArtistas = document.querySelectorAll('.card-artistas');
 // Funcion que se va a repetir
 const createButtom = card => {
     //Crear el botón
@@ -52,5 +53,9 @@ containerConcentracion.forEach(card => {
 });
 
 containerSpotifyPlayList.forEach(card => {
+    createButtom(card);
+});
+
+containerArtistas.forEach(card => {
     createButtom(card);
 });
